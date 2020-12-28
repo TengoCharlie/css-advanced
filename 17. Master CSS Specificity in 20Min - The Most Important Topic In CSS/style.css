@@ -1,0 +1,48 @@
+/* 
+0.0.0.0.0 ---> *
+0.0.0.0.1 ---> Element or pseudo-element
+0.0.0.1.0 ---> Class, Pseudo-class, or data attribute
+0.0.1.0.0 ---> ID
+0.1.0.0.0 ---> Inline Style
+1.0.0.0.0 ---> !Important
+
+If Id is not directly targeting any element then it is not having any prority in front of classes those who directly targeting an element
+==>>#ID element or .class{Priority 1} 
+==>>>.class element{Priority 2}
+==>>>>#ID {Priority 3}
+  */
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+.main_div{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: hsl(216, 100%, 94%);
+}
+
+.center_div{
+    width: 300px;
+    height: 180px;
+    border-radius: 16px;
+    background: green;
+    padding: 30px;
+    position: relative;
+    box-shadow:  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12);
+    display: grid;
+    place-items: center;
+    
+}
+

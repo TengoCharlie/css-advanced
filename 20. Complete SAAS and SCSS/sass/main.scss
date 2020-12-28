@@ -1,0 +1,45 @@
+// sass => css
+// scss => css3
+@import "./mixin";
+@import "./var";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+$bg-color: #10ac84;  //variable
+
+
+
+
+.main_header{
+    @include flexprob;   
+    width: 100vw;
+    height: 100vh;
+    background: $bg-color;
+
+    h1{
+       @include commoncode(0.8rem);
+    }
+    
+   
+    
+    p{
+        @include commoncode(0.5rem);
+    }
+
+}
+/*
+ =======Super powers of css=========
+ 1: operater==> using arithmetic directly
+ 2. variables==> $variable: data;
+ 3.nesting==>
+4. mixin ==> with parameter and arguments (multiple)
+5. partials ==> make distribution on different files and then integrate
+*/ 

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.center-div {
+  width: 100vw;
+  height: 100vh;
+  background-color: #2f3542;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.center-div h1 {
+  color: #fff;
+  font-size: 8rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.center-div h1::before {
+  content: "~AWESOME~";
+  width: 100%;
+  color: #2ed573;
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  border-right: 0.4rem solid #2ed573;
+  -webkit-animation: slide 2s linear infinite;
+          animation: slide 2s linear infinite;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes slide {
+  0% {
+    width: 0%;
+  }
+  50% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+/*# sourceMappingURL=main.css.map */

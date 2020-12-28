@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --width: 100vw;
+    --height: 100vh;
+}
+
+.main_header{
+    width: var(--width);
+    height: var(--height);
+    background: url(img2.jpg);
+    background-size: 100% 100;
+    display: grid;
+    place-items: center;
+    
+}
+
+h1{
+    background: #fff;
+    padding: 0 10px;
+    mix-blend-mode: screen;
+    
+}
+
+/* background-blend-mode */

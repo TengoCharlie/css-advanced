@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --width: 100vw;
+    --height: 100vh;
+}
+
+.main_header{
+    width: var(--width);
+    height: var(--height);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    background: #38ada9;
+    color: #fff;
+}
+
+.main_header * {
+    padding-top: 5px;
+}
+
+
+.main_header li:nth-child(2n){
+    color: #b71540;
+}
+
+.main_header li:nth-child(2n+1){
+    color: #ffff10;
+}
+
+.main_header li:first-child{
+    color: #4a69bd;
+}
+
+.main_header li:last-child{
+    color: aqua;
+}
+
+.main_header li:not(:nth-child(4)){
+    color: #ffff10;
+}

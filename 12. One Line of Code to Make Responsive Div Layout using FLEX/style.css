@@ -1,0 +1,49 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.grand_parent{
+    width: 100vw;
+    height: 100vh;
+    background: #dfe6e9;
+    color: #fff;
+}
+
+h1{
+    font-size: 4rem;
+    padding: 50px 0;
+    text-align: center;
+    color: #000;
+}
+
+p{
+    text-align: center;
+}
+
+.parent{
+    width: 80vw;
+    height: 60vh;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    transition: all 0.2s linear;
+}
+
+.child{
+    height: 200px;
+    background-color: aqua;
+    box-shadow: 0 0 20px #bcaceb;
+    flex: 1 1 200px;
+    margin: 20px;
+}
+.child:first-child{
+    background-color: orange;
+}
+
+.child:last-child{
+    background-color: green;
+}

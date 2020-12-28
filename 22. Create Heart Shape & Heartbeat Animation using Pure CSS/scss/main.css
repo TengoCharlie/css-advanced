@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-header {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ebeff4;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.center-div {
+  width: 10rem;
+  height: 10rem;
+  background-color: #ee5253;
+  position: relative;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-animation: hbeat 1s linear  infinite;
+          animation: hbeat 1s linear  infinite;
+}
+
+.center-div::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #ee5253;
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.center-div::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: #ee5253;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 50%;
+}
+
+@-webkit-keyframes hbeat {
+  0% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+  20% {
+    -webkit-transform: rotate(45deg) scale(2);
+            transform: rotate(45deg) scale(2);
+  }
+  40% {
+    -webkit-transform: rotate(45deg) scale(3);
+            transform: rotate(45deg) scale(3);
+  }
+  60% {
+    -webkit-transform: rotate(45deg) scale(3);
+            transform: rotate(45deg) scale(3);
+  }
+  80% {
+    -webkit-transform: rotate(45deg) scale(2);
+            transform: rotate(45deg) scale(2);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+}
+
+@keyframes hbeat {
+  0% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+  20% {
+    -webkit-transform: rotate(45deg) scale(2);
+            transform: rotate(45deg) scale(2);
+  }
+  40% {
+    -webkit-transform: rotate(45deg) scale(3);
+            transform: rotate(45deg) scale(3);
+  }
+  60% {
+    -webkit-transform: rotate(45deg) scale(3);
+            transform: rotate(45deg) scale(3);
+  }
+  80% {
+    -webkit-transform: rotate(45deg) scale(2);
+            transform: rotate(45deg) scale(2);
+  }
+  100% {
+    -webkit-transform: rotate(45deg) scale(1);
+            transform: rotate(45deg) scale(1);
+  }
+}
+/*# sourceMappingURL=main.css.map */

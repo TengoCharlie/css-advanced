@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.main-div {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf0f3;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.center-div {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+}
+
+.center-div::-webkit-scrollbar {
+  overflow: hidden;
+}
+
+img {
+  padding: 20px;
+  border-radius: 30px;
+}
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Trick 1 position */
+
+
+/* .parent_div{
+    width: 100vw;
+    height: 100vh;
+    background: #2980b9;
+    position: relative;
+}
+
+.child_div{
+    width: 60vw;
+    height: 60vh;
+    background: #1abc9c;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* Trick 2  flex box */
+/* .parent_div{
+    width: 100vw;
+    height: 100vh;
+    background: #2980b9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.child_div{
+    width: 60vw;
+    height: 60vh;
+    background: #1abc9c;
+} */
+
+/* Trick 3  grid */
+
+.parent_div{
+    width: 100vw;
+    height: 100vh;
+    background: #2980b9;
+    display: grid;    
+    place-items: center;
+}
+
+.child_div{
+    width: 60vw;
+    height: 60vh;
+    background: #1abc9c;
+}

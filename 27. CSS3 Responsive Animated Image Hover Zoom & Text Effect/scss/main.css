@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-div {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ecf0f3;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.center-div {
+  width: 40vw;
+  height: 60vh;
+  background-color: red;
+  position: relative;
+  overflow: hidden;
+}
+
+.center-div img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.center-div .captions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  opacity: 0;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.center-div .captions h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 30rem;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+}
+
+.center-div .captions p {
+  text-transform: capitalize;
+}
+
+.center-div:hover img {
+  -webkit-transform: scale(1.3) rotate(12deg);
+          transform: scale(1.3) rotate(12deg);
+}
+
+.center-div:hover .captions {
+  opacity: 1;
+}
+
+.center-div:hover .captions h1 {
+  margin-top: 0;
+}
+
+@media (max-width: 768px) {
+  .center-div {
+    width: 50vw;
+    height: 50vh;
+  }
+}
+/*# sourceMappingURL=main.css.map */

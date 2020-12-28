@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+:root{
+    --width: 100vw;
+    --height: 100vh;
+}
+
+.main_div{
+    width: var(--width);
+    height: var(--height);
+    background: #192a56;
+    display: grid;
+    place-items: center;
+    font-size: 100px;
+}
+
+a{
+    text-decoration: none;
+    transition: all 0.3 linear;
+}
+
+a:link{
+    color: white;
+}
+
+a:hover{
+    color: #192a56;
+    background: white;
+}
+
+a:active{
+    color: yellow;
+    background-color: green;
+}
+
+a:visited{
+    color: white;
+}
+
+a:visited:hover{
+    color: #192a56;
+    background: white;
+}
+
+a:visited:active{
+    color: yellow;
+    background-color: green;
+}

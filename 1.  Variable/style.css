@@ -1,0 +1,21 @@
+:root{
+    --clr:brown;
+    --bg-clr: #42a5f5;
+}
+
+div{
+    background: var(--bg-clr);
+}
+
+h1{
+    color: var(--clr);
+}
+
+h2{
+    color: var(--clr);
+}
+
+h3{
+    --clr: white;
+    color: var(--clr);
+}
